@@ -8,9 +8,9 @@ import java.sql.SQLException;
 
 public class ProvaConnDB {
 	
+	static String connectionString = "jdbc:mysql://localhost:3306/database1?user=Pasquale_S&password=Acce1313";
+	
 	public static void avviaConnection() {
-		
-		String connectionString = "jdbc:mysql://localhost:3306/database1?user=Pasquale_S&password=Acce1313";
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -28,7 +28,7 @@ public class ProvaConnDB {
 				System.out.println("ID: " + rs.getInt(1) + ", nome: " + rs.getString("nome") + ", cognome: " + rs.getString("cognome"));
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			System.out.println("Connessione al DataBase non riuscita...");
 			e.printStackTrace();
 		} finally {
 			try {

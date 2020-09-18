@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="../css/styleJsp.css">
 </head>
 <body>
-	<h1>Questa è la tua prima jsp.</h1>
+	<h1>Questa è la tua prima jsp.  ${a} ${param.parametro1}</h1>
 	<a href="<%= request.getContextPath() %>">Torna in <b> <%= request.getContextPath() %> </b> <br></a>
 	
 	<% 

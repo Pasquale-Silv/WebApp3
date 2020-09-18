@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>AUTENTICATO</title>
+<link rel="stylesheet" type="text/css" href="../css/styleJsp.css">
 </head>
 <body>
 	<h3>CONGRATULAZIONI <%= request.getSession().getAttribute("username") + "!!!" %></h3>
